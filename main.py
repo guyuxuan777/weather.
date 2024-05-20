@@ -21,7 +21,7 @@ def weather():
             )
 
         response = requests.get('https://jisutqybmf.market.alicloudapi.com/weather/query', headers=headers, params=params, verify=False)
-
+#备注
         info=response.content.decode('utf-8')
         info = json.loads(info)
         lis.delete(0,END)
